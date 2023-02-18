@@ -6,7 +6,12 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-console.assert(assertEqual("Lighthouse Labs", "Bootcamp"));
-console.log(assertEqual(1, 1));
+const tail = function(array) {
+  return array.slice(1);
+};
 
-module.exports = assertEqual;
+const words = ["Yo Yo", "Lighthouse", "Labs"];
+tail(words); 
+console.log(assertEqual(words.length, 3));
+
+module.exports = tail;
